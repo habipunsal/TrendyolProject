@@ -1,0 +1,25 @@
+Created by Habip ÜNSAL on 29.11.2020
+
+This is a concept file with following syntax for each concept.
+# Urun Ara ve Random Urun Sec
+* "//input[@class='search-box']" Xpath'li elemente "Bilgisayar" i yazdir
+* "2" saniye bekle
+* "//div[@class='search-box-container']/i" Xpath'li elemente tıkla.
+* "2" saniye bekle
+* "//div[@class='p-card-wrppr']/div/a" li elementlerden random urun sec ve tikla
+* "2" saniye bekle
+
+# Secilen urunu sepete ekle ve fiyatları karsilastir
+* "((//span[@class='prc-dsc'])[1] | (//span[@class='prc-slg'])[1])[1]" Xpath'li Elementin textini al.
+* "//div[@class='add-to-bs-tx']" Xpath'li elemente tıkla.
+* "myBasketListItem" Id'li elemente tıkla.
+* "2" saniye bekle
+* "//dd[@class='total-price']" Xpath'li elementin texti ile gelenText'i karsilastir.
+* "2" saniye bekle
+
+
+# Sepeti temizle ve bos oldugunu kontrol et
+* "//i[@class='i-trash']" Xpath'li elemente tıkla.
+* "//span[@ng-if='!isLoading.remove']" Xpath'li elemente tıkla.
+* "2" saniye bekle
+* "//span[contains(text(),'Sepetinizde ürün bulunmamaktadır.')]" li element var mı ? "Sepetinizde ürün bulunmamaktadır."

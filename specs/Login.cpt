@@ -1,0 +1,13 @@
+Created by Habip ÜNSAL on 29.11.2020
+
+This is a concept file with following syntax for each concept.
+# Giris yapilir ve kontrol edilir
+* "accountBtn" Id'li elemente tıkla.
+* "2" saniye bekle
+* "login-email" Id'li elemente "testdeneme.hn@gmail.com" i yazdir
+* "login-password-input" Id'li elemente "Deneme123" i yazdir
+* "//*[@id='login-register']/div[3]/div[1]/form/button" Xpath'li elemente tıkla.
+* "//div[@title='Kapat']" Xpath'li elemente tıkla.
+* "2" saniye bekle
+* "//span[@id='logged-in-container']/span" li element var mı ? "Hesabım"
+* "2" saniye bekle
